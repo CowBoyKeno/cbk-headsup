@@ -121,7 +121,7 @@ This keeps the client UI simple while ensuring authoritative server validation.
 
 ## How It Works
 
-1. Player opens UI (`/bubbleui` or keybind).
+1. Player opens UI (`/bubbleui` or keybind F2).
 2. NUI sends message to client callback (`send`).
 3. Client triggers server event: `ultra_chatbubble:send`.
 4. Server sanitizes/rate-limits and sends to nearby players.
@@ -169,3 +169,4 @@ See `CHANGELOG.md` for release history.
 ## License
 
 See `LICENSE`.
+
