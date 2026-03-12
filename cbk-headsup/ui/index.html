@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        http-equiv="Content-Security-Policy"
+        content="default-src 'self' 'unsafe-inline' data: blob:; connect-src 'self' https://*;"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra Chat Bubble</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bubble-layer"></div>
+
+    <div id="input-root" class="hidden">
+        <div id="panel">
+            <div class="panel-header" id="panelHeader">
+                <span>Chat Bubble</span>
+                <small>Drag</small>
+            </div>
+
+            <textarea
+                id="message"
+                maxlength="160"
+                rows="3"
+                placeholder="Type your live RP response..."
+                spellcheck="false"
+            ></textarea>
+
+            <div class="actions">
+                <button id="send" class="btn btn-send" type="button">SEND</button>
+                <button id="close" class="btn btn-close" type="button">CLOSE</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
